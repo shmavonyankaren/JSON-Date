@@ -8,7 +8,6 @@ function monthsInterval(start, end) {
             return index >= startMonthIndex && index <= endMonthIndex;
         })
     } else if(endMonthIndex === startMonthIndex) {
-        const currentMonths = months.slice(startMonthIndex).concat(months.slice(0, startMonthIndex));
         return months;
     } else {
         return months.slice(0, endMonthIndex + 1).concat(months.slice(startMonthIndex, months.length))
